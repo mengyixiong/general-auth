@@ -1,6 +1,7 @@
 package com.liuzhuo.service;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.liuzhuo.common.AccountTitleDto;
 import com.liuzhuo.common.vo.PageVo;
 import com.liuzhuo.domain.AccountTitles;
 import com.baomidou.mybatisplus.extension.service.IService;
@@ -16,9 +17,9 @@ public interface AccountTitlesService extends IService<AccountTitles> {
 
     /**
      * 查询会计科目表列表
-     * @param pageNum
-     * @param pageSize
+     *
+     * @param dto
      * @return
      */
-    PageVo<AccountTitles> selectList(int pageNum, int pageSize);
+    PageVo<AccountTitles> selectList(AccountTitleDto dto);
 }
