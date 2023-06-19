@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liuzhuo.mapper.AccountTitlesMapper">
+
+    <resultMap id="BaseResultMap" type="com.liuzhuo.domain.AccountTitles">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="pid" column="pid" jdbcType="INTEGER"/>
+            <result property="level" column="level" jdbcType="BIGINT"/>
+            <result property="code" column="code" jdbcType="VARCHAR"/>
+            <result property="cnName" column="cn_name" jdbcType="VARCHAR"/>
+            <result property="enName" column="en_name" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="VARCHAR"/>
+            <result property="format" column="format" jdbcType="VARCHAR"/>
+            <result property="abb" column="abb" jdbcType="VARCHAR"/>
+            <result property="currency" column="currency" jdbcType="VARCHAR"/>
+            <result property="comId" column="com_id" jdbcType="BIGINT"/>
+            <result property="foreign" column="foreign" jdbcType="CHAR"/>
+            <result property="dn" column="dn" jdbcType="CHAR"/>
+            <result property="freezed" column="freezed" jdbcType="CHAR"/>
+            <result property="foreignBalance" column="foreign_balance" jdbcType="DECIMAL"/>
+            <result property="balance" column="balance" jdbcType="DECIMAL"/>
+            <result property="isLast" column="is_last" jdbcType="CHAR"/>
+            <result property="yearBegining" column="year_begining" jdbcType="DECIMAL"/>
+            <result property="foreignYearBegining" column="foreign_year_begining" jdbcType="DECIMAL"/>
+            <result property="cash" column="cash" jdbcType="CHAR"/>
+            <result property="accountOpening" column="account_opening" jdbcType="DECIMAL"/>
+            <result property="foreignAccountOpening" column="foreign_account_opening" jdbcType="DECIMAL"/>
+            <result property="venderRequired" column="vender_required" jdbcType="CHAR"/>
+            <result property="clerkRequired" column="clerk_required" jdbcType="CHAR"/>
+            <result property="teamRequired" column="team_required" jdbcType="CHAR"/>
+            <result property="branchRequired" column="branch_required" jdbcType="CHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,pid,level,
+        code,cn_name,en_name,
+        type,format,abb,
+        currency,com_id,foreign,
+        dn,freezed,foreign_balance,
+        balance,is_last,year_begining,
+        foreign_year_begining,cash,account_opening,
+        foreign_account_opening,vender_required,clerk_required,
+        team_required,branch_required
+    </sql>
+</mapper>
